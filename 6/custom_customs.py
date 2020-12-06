@@ -20,12 +20,7 @@ def questionsAnswered2(inputFileName):
 
 def getCountQuestionsAnsweredByEveryone(rawAnswers, answerSet):
     groupSize = len(rawAnswers)
-    count = 0
-    for answer in answerSet:
-        if ''.join(rawAnswers).count(answer) == groupSize:
-            count +=1
-
-    return count
+    return len([answer for answer in answerSet if ''.join(rawAnswers).count(answer) == groupSize])
 
 def getAnswerSetForGroup(group: List[str]) -> Set[str]:
     answerSet = set()
