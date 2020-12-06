@@ -1,0 +1,3 @@
+# advent-of-code-2k20
+
+My hacky attempts to solve some coding challenges...
